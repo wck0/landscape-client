@@ -2,12 +2,7 @@
 import sys
 
 from distutils.core import setup
-print(sys.prefix)
-print(sys.base_prefix)  # noqa
-print(sys.base_exec_prefix)  # noqa
-print(sys.exec_prefix)  # noqa
-print(sys.executable)  # noqa
-print(sys.path)
+sys.path.append("/usr/lib/python3/dist-packages")
   # noqa
 from DistUtilsExtra.auto import clean_build_tree  # noqa
 from DistUtilsExtra.command import build_extra  # noqa
