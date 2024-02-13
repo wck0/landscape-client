@@ -1,15 +1,17 @@
 #!/usr/bin/python
+import sys
+
 from distutils.core import setup
 
-import sys
-print(sys.base_prefix)
-print(sys.base_exec_prefix)
-print(sys.exec_prefix)
-print(sys.executable)
-
-from DistUtilsExtra.auto import clean_build_tree
-from DistUtilsExtra.command import build_extra
-
+print(sys.base_prefix)  # noqa
+print(sys.base_exec_prefix)  # noqa
+print(sys.exec_prefix)  # noqa
+print(sys.executable)  # noqa
+breakpoint()
+  # noqa
+from DistUtilsExtra.auto import clean_build_tree  # noqa
+from DistUtilsExtra.command import build_extra  # noqa
+  # noqa
 from landscape import UPSTREAM_VERSION
 
 
