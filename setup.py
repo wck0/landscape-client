@@ -1,5 +1,12 @@
 #!/usr/bin/python
 from distutils.core import setup
+
+import sys
+print(sys.base_prefix)
+print(sys.base_exec_prefix)
+print(sys.exec_prefix)
+print(sys.executable)
+
 from DistUtilsExtra.auto import clean_build_tree
 from DistUtilsExtra.command import build_extra
 
